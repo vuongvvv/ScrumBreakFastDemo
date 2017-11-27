@@ -3,11 +3,9 @@
  */
 
 var page = require('./page');
-var support = require('../steps/support/support');
 var util = require('util');
 
 class homePage extends page {
-
     get sectionTodo() { return browser.element("div[class='well ng-scope'][module='todoApp']"); }
     get checkboxLearnAngularJS() { return browser.element("ul[class='unstyled']>li:nth-child(1) input"); }
     get checkboxBuildAngularJSApp() { return browser.element("ul[class='unstyled']>li:nth-child(2) input"); }
