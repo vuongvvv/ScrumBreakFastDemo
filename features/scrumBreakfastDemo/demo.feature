@@ -1,6 +1,6 @@
 @smoke1
 Feature: Demo Feature 
-@watch
+
 Scenario: TC-01: Verify user is able to add/remove to do Tasks
   Given I navigate to the demo page
    When I go to To Do section
@@ -12,7 +12,7 @@ Scenario: TC-01: Verify user is able to add/remove to do Tasks
    When I click on learn Angular JS checkbox
    Then I see learn AngularJS checkbox is unchecked
     And I see learn AngularJS text is not strikethrough
-@watch
+
 Scenario: TC-02: Verify user can create a Project successul
   Given I navigate to the demo page
    When I go to JavaScript Projects section
