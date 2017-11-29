@@ -1,18 +1,6 @@
 @smoke1
 Feature: Demo Feature 
 
-Scenario: TC-01: Verify user is able to add/remove to do Tasks
-  Given I navigate to the demo page
-   When I go to To Do section
-   Then I see learn AngularJS checkbox is checked
-    And I see learn AngularJS text is strikethrough
-   When I enter "Join ScrumBreakFirst" into Add New Todo textbox
-    And I click on Add button
-   Then I see "Join ScrumBreakFirst" checkbox displays
-   When I click on learn Angular JS checkbox
-   Then I see learn AngularJS checkbox is unchecked
-    And I see learn AngularJS text is not strikethrough
-
 Scenario: TC-02: Verify user can create a Project successul
   Given I navigate to the demo page
    When I go to JavaScript Projects section
