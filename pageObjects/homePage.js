@@ -13,6 +13,8 @@ class homePage extends page {
     get textBuildAngularJSApp() { return browser.element("span=build an AngularJS app"); };
     get textboxAddNewTodo() { return browser.element("input[placeholder='add new todo here']"); };
     get buttonAddOnTodoSection() { return browser.element("input[class='btn-primary'][value='add']"); };
+
+    //TC 02
     get sectionJavascriptProjects() { return browser.element("div[module='project'][app-run='project.html']"); }
     get buttonAddOnJavascriptProjectsSection() { return browser.element("i[class='icon-plus-sign']"); };
     get buttonSaveOnJavascriptProjectsSection() { return browser.element("button=Save"); };
@@ -22,6 +24,8 @@ class homePage extends page {
     get textboxSearchOnJavascriptProjectsSection() { return browser.element("input[id='projects_search']"); };
 
     labelTodoCheckbox(value) { return browser.element(util.format("span=%s", value)); };
+
+    //TC 02
     labelProjectsOnJavascriptProjectsSection(value) { return browser.element(util.format("a=%s", value)); };
     labelDescriptionOnJavascriptProjectsSection(value) { return browser.element(util.format(".ng-binding=%s", value)); };
 }
